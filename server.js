@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port ="https://raj-music.herokuapp.com/";
+const port =5000;
 
 app.use(express.static('public'));
 
@@ -9,5 +9,5 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(port,()=>{
-  console.log("Server is Running on Port 3000."+port);
+  console.log("Server is Running on Port."+port);
 })
